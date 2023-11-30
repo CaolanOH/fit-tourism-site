@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: boarder-box;
+}
+
+/* **** Global styles **** */
+a {
+    text-decoration: none;
+}
+
+.red {
+    color: red;
+}
+
+/* **** NAVIGATION BAR **** */
+
+.hero-image {
+    background: url("../images/hero.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    /* padding: 1.5em 0 1.5em; */
+    background: rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 9.375em;
+
+}
+
+.logo {
+    flex: 1;
+    padding: 1.25em 1.25em;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.5625em;
+    list-style: none;
+    gap: 2.25em;
+}
+
+nav>ul>li>a {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+}
+
+nav>ul>li>a:hover {
+    font-size: 1.7em;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+/* **** NAVIGATION BAR **** */
+/* **** HERO TEXT **** */
+.wicklow-large {
+    margin-top: 01em;
+    margin-left: 0.5em;
+    font-size: 12.5em;
+    color: #fff;
+}
+
+.garden-county {
+    margin-top: 0.1em;
+    margin-left: 2.2em;
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.free-spirits {
+    margin-top: 1em;
+    margin-left: 4.5em;
+    font-size: 1.875em;
+    color: #fff;
+}
+
+/* **** HERO TEXT **** */
+/* **** CAROUSEL **** */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+/* **** experiences **** */
+
+#experiences>h3 {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 3rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.cards {
+    margin: 0 1.25em;
+}
+
+.card {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.card-img {
+    width: 100%;
+
+}
+
+/* **** experiences **** */
+/* **** NEWS LETTER **** */
+
+#newsletter>h3 {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+
+}
+
+.newsletter-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-input input {
+    width: 50vw;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 3px;
+}
+
+.newsletter-btn {
+    height: 40px;
+    width: 100px;
+}
+
+/* **** NEWS LETTER **** */
+
+/* **** CAROUSEL **** */
+#carousel>img {
+    max-width: 100%;
+}
+
+.carousel-wrap {
+    position: relative;
+}
+
+.carousel-inner {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-inner .slide {
+    transition: all 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    text-align: center;
+    padding: 0;
+    transition: all 0.2s ease-in;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.carousel-inner .slide.active {
+    display: block;
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.next-previous-navigation {
+    display: flex;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    font-size: 2rem;
+    line-height: 1;
+    user-select: none;
+}
+
+.next-previous-navigation .next,
+.next-previous-navigation .previous {
+    cursor: pointer;
+    padding: 20px 10px;
+    color: #fff;
+}
+
+.next-previous-navigation .next {
+    margin-left: auto;
+}
+
+.next-previous-navigation .previous {
+    margin-right: auto;
+}
+
+.next-previous-navigation .next,
+.next-previous-navigation .previous {
+    width: auto;
+    height: 18px;
+    stroke-width: 1.5px;
+    stroke: currentColor;
+}
+
+.next-previous-navigation .next svg,
+.next-previous-navigation .previous svg {
+    width: auto;
+    height: 35px;
+    stroke-width: 2.5px;
+    stroke: #fff;
+    fill: #fff;
+}
+
+/* **** CAROUSEL **** */
