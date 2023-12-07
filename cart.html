@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="../scripts/myScript.js"></script>
-		<link rel="stylesheet" href="../styles/myStyles.css" />
-		<title>Shopping Cart</title>
-	</head>
-	<body></body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="../styles/cartstyles.css" />
+	<title>Shopping Cart</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Ticket Sales</h1>
+
+		<div class="tickets">
+			<div class="ticket" data-id="1">
+				<h2>Destination</h2>
+				<!-- <p>Price: $50</p> -->
+
+				<label for="event1-quantity">Destination:</label>
+				<select id="event1-quantity" name='destination'>
+
+					<option selected="selected" value='glendalough'>Glendalough</option>
+					<option value='wicklow'>Wicklow Town</option>
+					<option value='brittasBay'>Brittas Bay</option>
+				</select>
+				<button class="add-to-cart">Add to Cart</button>
+			</div>
+			<div class="ticket" data-id="2">
+				<h2>Experience</h2>
+				<!-- <p>Price: $50</p> -->
+				<label for="event2-quantity">Experience:</label>
+				<select id="event2-quantity" name='experiences'>
+
+					<option selected="selected" value='bungjeeJumping'>Bungee Jumping</option>
+					<option value='skyDiving'>Sky diving</option>
+					<option value='outerSpace'>trip to outer space</option>
+				</select>
+				<button class="add-to-cart">Add to Cart</button>
+			</div>
+
+			<div class="ticket" data-id="3">
+				<h2>Accommodation</h2>
+				<!-- <p>Price: $60</p> -->
+				<label for="event3-quantity">Accommodation:</label>
+				<select id="event3-quantity" name='accommodation'>
+
+					<option selected="selected" value='hilton'>The Hilton</option>
+					<option value='overlook'>the Overlook</option>
+					<option value='waldorf'>the Waldorf Astoria</option>
+				</select>
+				<button class="add-to-cart">Add to Cart</button>
+			</div>
+
+			<div class="ticket" data-id="4">
+				<h2>Gastronomy</h2>
+				<!-- <p>Price: $70</p> -->
+				<label for="event3-quantity">Gastronomy:</label>
+				<select id="event4-quantity" name='gastronomy'>
+
+					<option slected="selected" value='greaseySpoon'>The Greasey Spoon</option>
+					<option value='shrimp'>Bubba Gump Shrimp Co.</option>
+					<option value='moes'>Moe's</option>
+				</select>
+				<button class="add-to-cart">Add to Cart</button>
+			</div>
+		</div>
+
+	</div>
+	<h2>Shopping Cart</h2>
+	<div class="cart">
+		<ul id="cart-items"></ul>
+		<p>Total: $<span id="cart-total">0</span></p>
+	</div>
+
+	<script src="../scripts/myScript.js"></script>
+	</div>
+</body>
+
 </html>
